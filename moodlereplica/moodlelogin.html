@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Bombay Moodle: Log in to the site</title>
+    <script src="https://kit.fontawesome.com/9abd886405.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 5rem; left: 25%;
+        }
+        .upperbox {
+            border: 1px solid lightgrey;
+            margin-bottom: 1rem;
+        }
+        .upper {
+            display: flex;
+            border-bottom: 1px solid lightgrey;
+            align-items: center;
+            justify-content: center;
+            height: 4rem;
+            font-size: 30px;
+            font-weight: lighter;
+            background-color: rgb(244, 244, 244);
+        }
+        .lower {
+            text-align: center;
+            display: flex;
+            position: relative;
+        }
+        .left {
+            width: 50%;
+        }
+        .inp1 {
+            padding-top: 2rem;
+            padding-bottom: 8px;
+        }
+        .inp2 {
+            padding-top: 8px;
+        }
+        .inp1 input{
+            width: 70%; height: 35px;
+            padding: 2px;
+            margin-left: 2rem;
+        }
+        .inp2 input {
+            width: 70%;  height: 35px;
+            padding: 2px;
+            margin-left: 2rem;
+        }
+        .check {
+            padding-top: 12px;
+            padding-bottom: 24px;
+            float: left;
+            margin-left: 17.7%;
+            font-size: small;
+        }
+        .but {
+            padding-top: 20px;
+            padding-bottom: 1.5rem;
+        }
+        .but button {
+            width: 70%; height: 35px;
+            padding: 10px;
+            margin-left: 2rem;
+            background-color: rgb(45, 126, 198);
+            color: white;
+            border: none;
+        }
+        .but button:hover {
+            background-color: rgb(23, 93, 155);
+        }
+        .right {
+            width: 50%;
+            text-align: left;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 5rem;
+        }
+        .lowerbox {
+            border: 1px solid lightgrey;
+            padding-right: 2rem;
+        }
+        .heading {
+            padding-left: 1rem;
+            font-size: xx-large;
+        }
+        li {
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="upperbox">
+            <div class="upper">
+                <p>IIT Bombay Moodle</p>
+            </div>
+            <div class="lower">
+                <div class="left">
+                    <div class="inp1">
+                        <input type="email" placeholder="Username">
+                    </div>
+                    <div class="inp2">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" checked>
+                        <label>Remember username
+                    </div>
+                    <div class="but">
+                        <button type="submit">Log in</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="cookie">
+                        Cookies must be enabled in your browser
+                        <i class="fa-solid fa-circle-question" style="color: rgb(24, 158, 154);"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="lowerbox">
+            <p class="heading">Is this your first time here?</p>
+            <ul>
+                <li style="color: green; font-size: larger;">Help documents are available <a href="#here" style="text-decoration: none">here</a>.</li>
+                <li>Course enrollments are synced periodically. Please wait for some time for your course to appear on Moodle</li>
+                <li>To access older courses, please visit this link. (requires VPN for outside IITB connection)</li>
+                <li> <strong>For all Moodle related issues,</strong>  kindly send an e-mail to <strong>moodle.help</strong> at <strong>iitb.ac.in</strong>  with roll number / employee code.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
