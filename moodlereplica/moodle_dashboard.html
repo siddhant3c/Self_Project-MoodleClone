@@ -55,6 +55,9 @@
             border: none;
             padding: 8px;
         }
+        /* .p1 {
+            margin-left: 8px;
+        } */
         .big-container{
             display: flex;
             width: 100vw;
@@ -69,33 +72,38 @@
         }
         .c2box1 {
             background-color: blanchedalmond;
+            padding: 8px 8px;
         }
         .but2 {
             float: right;
             background-color: aqua;
         }
         .c2b1-1 {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin: 0rem 5rem;
         }
         .course-box-type1{
             background-color: wheat;
             margin: 8px;
-            width: 23.33333vw;
         }
         .c2box2 {
             background-color: darkgrey;
             margin-top: 8px;
+            padding: 0 8px;
         }
         .c2b2-1 {
-            
+            display: flex;
+        }
+        .c2b2-1-left{
+            flex-grow: 1;
+        }
+        .but3 {
+
         }
         .c2b2-2 {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
         }
         .c2b2-3 {
 
@@ -103,7 +111,6 @@
         .course-box-type2{
             background-color: lightskyblue;
             margin: 4px 4px 4px 4px;
-            width: calc(23.33333vw - 8px);
         }
         .container3 {
             display: flex;
@@ -111,24 +118,69 @@
             background-color: coral;
             width: 30vw;
             margin: 8px;
+            overflow: none;
         }
         .c3box1 {
+            background-color: darkkhaki;
+            margin-bottom: 4px;
+            padding-left: 8px;
 
+        }
+        .c3box1-buttons{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 8px;
+        }
+        .c3b1-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 16px 0 32px 0;
         }
         .c3box2 {
-
+            background-color: forestgreen;
+            margin: 4px 0px;
+            padding: 0 8px 16px 8px;
         }
         .c3box3 {
-
+            background-color: lightseagreen;
+            margin: 4px 0px;
+            padding: 0 8px 16px 8px;
         }
         .c3box4 {
-
+            background-color: violet;
+            margin: 4px 0px;
+            padding: 0 8px;
         }
         .c3box5 {
-
+            background-color: lightgoldenrodyellow;
+            margin: 4px 0px;
+            padding: 0 8px 16px 0;
+        }
+        .c3b5-1 {
+            display: flex;
+            justify-content: center;
+        }
+        .c3b5-2 {
+            
+        }
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+        .dates {
+            padding: 4px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+        .dates div:first-child {
+            grid-column: 4;
         }
         .c3box6 {
-
+            background-color: thistle;
+            margin-top: 4px;
+            padding: 0 8px 16px 0;
         }
         .footer {
             position: static;
@@ -200,17 +252,19 @@
             <div class="c2box2">
                 <p class="p1">Course overview</p>
                 <div class="c2b2-1">
-                    <button class="but3">
-                        <a href="fliter">Filter</a>
-                        All (except removed from view)
-                        <a href="downarrow">Down</a>
-                    </button>
-                    <button class="but3">
+                    <div class="c2b2-1-left">
+                        <button class="but3" style="float: left;">
+                            <a href="fliter">Filter</a>
+                            All (except removed from view)
+                            <a href="downarrow">Down</a>
+                        </button>
+                    </div>
+                    <button class="but3" style="float: right;">
                         <a href="dropdown">Filter</a>
                         Short Name
                         <a href="downarrow">Down</a>
                     </button>
-                    <button class="but3">
+                    <button class="but3" style="float: right;">
                         <a href="3x3">Filter</a>
                         Card
                         <a href="downarrow">Down</a>
@@ -327,14 +381,17 @@
             <!-- Timeline -->
             <div class="c3box1">
                 <p class="p1">Timeline</p>
-                <button class="but3">
-                    <a href="time">Time</a>
-                    <a href="downarrow">Down</a>
-                </button>
-                <button class="but3">
-                    <a href="fliter">Filter</a>
-                    <a href="downarrow">Down</a>
-                </button>
+                <div class="c3box1-buttons">
+                    <button class="but3">
+                        <a href="time">Time</a>
+                        <a href="downarrow">Down</a>
+                    </button>
+                    <button class="but3">
+                        <a href="fliter">Filter</a>
+                        <a href="downarrow">Down</a>
+                    </button>
+                </div>
+                
                 <div class="c3b1-1">
                     <a href="Page">Page</a><br>
                     No upcoming activities due
@@ -433,12 +490,60 @@
             <!-- Calendar -->
             <div class="c3box5">
                 <p class="p1">Calendar</p>
+                <div class="c3b5-1"></div>
                 <button class="but4">
                     <a href="left">Left</a>
+                </button>
+                <button class="but4">
                     <a href="Calendar">Calendar</a>
+                </button>
+                <button class="but4">
                     <a href="right">Right</a>
                 </button>
-    
+                <div class="c3b5-2">
+                    <div class="days">
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                        <div>Sun</div>
+                    </div>
+                    <div class="dates">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                    <div>13</div>
+                    <div>14</div>
+                    <div>15</div>
+                    <div>16</div>
+                    <div>17</div>
+                    <div>18</div>
+                    <div>19</div>
+                    <div>20</div>
+                    <div>21</div>
+                    <div>22</div>
+                    <div>23</div>
+                    <div>24</div>
+                    <div>25</div>
+                    <div>26</div>
+                    <div>27</div>
+                    <div>28</div>
+                    <div>29</div>
+                    <div>30</div>
+                    <div>31</div>
+                    </div>
+                </div>
             </div>
     
             <!-- Upcoming events -->
