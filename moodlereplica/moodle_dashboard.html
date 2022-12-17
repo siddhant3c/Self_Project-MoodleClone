@@ -15,6 +15,10 @@
         }
         .navbar {
             display: flex;
+            position: fixed;
+            width: 100vw;
+            margin-top: -48px;
+            margin-left: -8px;
         }
         .left nav {
 
@@ -23,20 +27,25 @@
             background-color: lightpink;
             display: inline;
             flex-grow: 1;
+            padding: 8px 0px 8px 32px;
         }
         .navbar-right {
             float: right;
             background-color: lightblue;
+            padding: 8px 16px 8px 8px;
         }
         .navbar-right-box {
             float: right;
             background-color: yellow;
+            padding: 0px 8px 0px 8px;
         }
         .container1 {
             display: flex;
             flex-direction: row-reverse;
             background-color: aquamarine;
             align-items: center;
+            margin-top: 40px;
+            padding: 16px;
         }
         .c1box1 {
             color: aqua;
@@ -44,9 +53,19 @@
         #but1 {
             background-color: lightgray;
             border: none;
+            padding: 8px;
+        }
+        .big-container{
+            display: flex;
+            width: 100vw;
         }
         .container2 {
+            display: flex;
+            flex-direction: column;
             background-color: lightgreen;
+            margin-top: 8px;
+            float: left;
+            width: 70vw;
         }
         .c2box1 {
             background-color: blanchedalmond;
@@ -62,9 +81,12 @@
         }
         .course-box-type1{
             background-color: wheat;
+            margin: 8px;
+            width: 23.33333vw;
         }
         .c2box2 {
             background-color: darkgrey;
+            margin-top: 8px;
         }
         .c2b2-1 {
             
@@ -73,15 +95,22 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
         }
         .c2b2-3 {
 
         }
         .course-box-type2{
             background-color: lightskyblue;
+            margin: 4px 4px 4px 4px;
+            width: calc(23.33333vw - 8px);
         }
         .container3 {
+            display: flex;
+            flex-direction: column;
             background-color: coral;
+            width: 30vw;
+            margin: 8px;
         }
         .c3box1 {
 
@@ -102,10 +131,9 @@
 
         }
         .footer {
-            position: relative;
+            position: static;
             background-color: #343a40;
             color: #f8f9fa;
-            bottom: 0;
             width: 100%;
             padding-left: 10rem;
             font-weight: lighter;
@@ -143,211 +171,285 @@
         </div>
     </div>
 
-    <div class="container2">
-        <!-- Recently accessed courses box -->
-        <div class="c2box1">
-            <p style="display: inline;" class="p1">
-                Recently accessed courses
-                <a href="Right" class="but2">right</a>
-                <a href="Left" class="but2">left</a>
-            </p>
-            <div class="c2b1-1">
-                <div class="course-box-type1">
-                    <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
-                    <a href="Course">Complex Analysis</a>
+    <div class="big-container">
+        <div class="container2">
+            <!-- Recently accessed courses box -->
+            <div class="c2box1">
+                <p style="display: inline;" class="p1">
+                    Recently accessed courses
+                    <a href="Right" class="but2">right</a>
+                    <a href="Left" class="but2">left</a>
+                </p>
+                <div class="c2b1-1">
+                    <div class="course-box-type1">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type1">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type1">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
                 </div>
-                <div class="course-box-type1">
-                    <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
-                    <a href="Course">Complex Analysis</a>
+            </div>
+    
+            <!-- Course overview box -->
+            <div class="c2box2">
+                <p class="p1">Course overview</p>
+                <div class="c2b2-1">
+                    <button class="but3">
+                        <a href="fliter">Filter</a>
+                        All (except removed from view)
+                        <a href="downarrow">Down</a>
+                    </button>
+                    <button class="but3">
+                        <a href="dropdown">Filter</a>
+                        Short Name
+                        <a href="downarrow">Down</a>
+                    </button>
+                    <button class="but3">
+                        <a href="3x3">Filter</a>
+                        Card
+                        <a href="downarrow">Down</a>
+                    </button>
                 </div>
-                <div class="course-box-type1">
-                    <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
-                    <a href="Course">Complex Analysis</a>
+                <div class="c2b2-2">
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                    <div class="course-box-type2">
+                        <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
+                        <a href="Course">Complex Analysis</a>
+                    </div>
+                </div>
+                <div class="c2b2-3">
+                    Show<button class="but3">
+                        All
+                        <a href="downarrow">Down</a>
+                    </button>
                 </div>
             </div>
         </div>
-
-        <!-- Course overview box -->
-        <div class="c2box2">
-            <p class="p1">Course overview</p>
-            <div class="c2b2-1">
+    
+        <div class="container3">
+            <!-- Timeline -->
+            <div class="c3box1">
+                <p class="p1">Timeline</p>
+                <button class="but3">
+                    <a href="time">Time</a>
+                    <a href="downarrow">Down</a>
+                </button>
                 <button class="but3">
                     <a href="fliter">Filter</a>
-                    All (except removed from view)
                     <a href="downarrow">Down</a>
                 </button>
-                <button class="but3">
-                    <a href="dropdown">Filter</a>
-                    Short Name
-                    <a href="downarrow">Down</a>
-                </button>
-                <button class="but3">
-                    <a href="3x3">Filter</a>
-                    Card
-                    <a href="downarrow">Down</a>
-                </button>
-            </div>
-            <div class="c2b2-2">
-                <div class="course-box-type2">
-                    <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
-                    <a href="Course">Complex Analysis</a>
-                </div>
-                <div class="course-box-type2">
-                    <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
-                    <a href="Course">Complex Analysis</a>
-                </div>
-                <div class="course-box-type2">
-                    <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
-                    <a href="Course">Complex Analysis</a>
-                </div>
-                <div class="course-box-type2">
-                    <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
-                    <a href="Course">Complex Analysis</a>
-                </div>
-                <div class="course-box-type2">
-                    <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
-                    <a href="Course">Complex Analysis</a>
-                </div>
-                <div class="course-box-type2">
-                    <p>Autumn 2022 (2022-1) | MA 205-2022-1</p> <br>
-                    <a href="Course">Complex Analysis</a>
+                <div class="c3b1-1">
+                    <a href="Page">Page</a><br>
+                    No upcoming activities due
                 </div>
             </div>
-            <div class="c2b2-3">
-                Show<button class="but3">
-                    All
-                    <a href="downarrow">Down</a>
+    
+            <!-- Private files -->
+            <div class="c3box2">
+                <p class="p1">Private files</p>
+                <p>No files available</p>
+                <a href="manage">Manage private files...</a>
+            </div>
+    
+            <!-- Online users -->
+            <div class="c3box3">
+                <p class="p1">Online Users</p>
+                <p style="text-align: center;">43 online users (last 4 minutes)</p>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Siddhant Chourasia</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+                <div class="user">
+                    <a href="dp">DP</a>
+                    <a href="user">Sarita Kumari Meena</a>
+                    <a href="chat" style="float: right;">Chat</a>
+                </div>
+            </div>
+    
+            <!-- Latest badges -->
+            <div class="c3box4">
+                <p class="p1">Latest badges</p>
+                <p>You have no badges to display</p>
+            </div>
+    
+            <!-- Calendar -->
+            <div class="c3box5">
+                <p class="p1">Calendar</p>
+                <button class="but4">
+                    <a href="left">Left</a>
+                    <a href="Calendar">Calendar</a>
+                    <a href="right">Right</a>
                 </button>
+    
+            </div>
+    
+            <!-- Upcoming events -->
+            <div class="c3box6">
+                <p class="p1">Upcoming events</p>
+                <p>There are no upcoming events</p>
+                <a href="calendar">Go to calendar...</a>
             </div>
         </div>
     </div>
-
-    <div class="container3">
-        <!-- Timeline -->
-        <div class="c3box1">
-            <p class="p1">Timeline</p>
-            <button class="but3">
-                <a href="time">Time</a>
-                <a href="downarrow">Down</a>
-            </button>
-            <button class="but3">
-                <a href="fliter">Filter</a>
-                <a href="downarrow">Down</a>
-            </button>
-            <div class="c3b1-1">
-                <a href="Page">Page</a><br>
-                No upcoming activities due
-            </div>
-        </div>
-
-        <!-- Private files -->
-        <div class="c3box2">
-            <p class="p1">Private files</p>
-            <p>No files available</p>
-            <a href="manage">Manage private files...</a>
-        </div>
-
-        <!-- Online users -->
-        <div class="c3box3">
-            <p class="p1">Online Users</p>
-            <p style="text-align: center;">43 online users (last 4 minutes)</p>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Siddhant Chourasia</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-            <div class="user">
-                <a href="dp">DP</a>
-                <a href="user">Sarita Kumari Meena</a>
-                <a href="chat" style="float: right;">Chat</a>
-            </div>
-        </div>
-
-        <!-- Latest badges -->
-        <div class="c3box4">
-            <p class="p1">Latest badges</p>
-            <p>You have no badges to display</p>
-        </div>
-
-        <!-- Calendar -->
-        <div class="c3box5">
-            <p class="p1">Calendar</p>
-            <button class="but4">
-                <a href="left">Left</a>
-                <a href="Calendar">Calendar</a>
-                <a href="right">Right</a>
-            </button>
-
-        </div>
-
-        <!-- Upcoming events -->
-        <div class="c3box6">
-            <p class="p1">Upcoming events</p>
-            <p>There are no upcoming events</p>
-            <a href="calendar">Go to calendar...</a>
-        </div>
-    </div>
-
+    
     <div class="footer">
         <p>
             You are not logged in. <br>
